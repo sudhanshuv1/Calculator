@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+	<title>Calculator Without Table</title>
+</head>
+<body><br><br>
+    
+    <div id='container'>
+        <div id="calculator">
+            <div id='screen'><textarea id='textDisplay'>0</textarea></div>
+            <div id="label">
+              <p>Calculator</p>
+              <button id="power" onClick="toggle();">ON</button>
+            </div>
+            
+            <div id='buttons'>
+                <button onclick="display(1);">1</button>
+                <button onclick="display(2);">2</button>
+                <button onclick="display(3);">3</button>
+                <button onclick="display('+');">+</button>
+                <button onclick="display('^');">^</button>
+                <button onclick="display(4);">4</button>
+                <button onclick="display(5);">5</button>
+                <button onclick="display(6);">6</button>
+                <button onclick="display('-');">-</button>
+                <button onclick="display('.');">.</button>
+                <button onclick="display(7);">7</button>
+                <button onclick="display(8);">8</button>
+                <button onclick="display(9);">9</button>
+                <button onclick="display('*');">*</button>
+                <button onclick="display('/');">/</button>
+                <button onclick="display(0);">0</button>
+                <button onclick="calculate();">=</button>
+                <button onclick="display('(');">(</button>
+                <button onclick="display(')');">)</button>
+                <button id='clear' onclick='clearScreen();'>C</button>
+            </div>
+            <div id="history">
+              <button onclick="deleteHistory();" id="deleteButton">CORRECT</button>
+              <button onclick="showHistory();">CHECK</button>
+            </div>
+        </div>
+    
+    </div>
+    
+</body>
+</html>
